@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script src="interact.js"></script>
+<script src="app.js"></script>
+
+<style>
+
+#drag-1, #drag-2 {
+  width: 25%;
+  height: 100px;
+  min-height: 6.5em;
+  margin: 10%;
+
+  background-color: #29e;
+  color: white;
+
+  border-radius: 0.75em;
+  padding: 4%;
+
+  -webkit-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+}
+
+#drag-me::before {
+  content: "#" attr(id);
+  font-weight: bold;
+}
+
+user-screen {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.display-block {
+    display: block;    
+}
+
+.login-title {
+    
+}
+
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+
+body {
+        
+
+}
+.login-container {
+    background: linear-gradient(to bottom right, #42394F, #2A3755); 
+    height: 100px;
+    width: 130px;
+    padding: 15px;
+}
+.login-container .login-title {
+    color: white;
+    font-size: 18px;
+}
+
+</style>
+
+<body ng-app="app" ng-controller="mainCtrl">
+
+    <login-screen ng-if="!isLoggedIn()"></login-screen>
+    <user-screen ng-if="isLoggedIn()"></user-screen>
+
+</body>
+
+</html>
