@@ -1,0 +1,72 @@
+.display-block {
+    display: block;    
+}
+
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+*:focus {
+    outline: none;
+}
+
+.login-container {
+    background: linear-gradient(to bottom right, #42394F, #2A3755); 
+    height: 150px;
+    width: 250px;
+    padding: 15px;
+}
+
+.login-container .login-title {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 10px; 
+    font-family: Helvetica;
+    letter-spacing: 1.5px;
+    text-align: center;
+}
+
+.login-container .login-button {
+    background: linear-gradient(to bottom right, #6AADD9, #4F80CD); 
+    color: rgba(255,255,255,0.8);
+    font-size: 14px;
+    width: 250px;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    margin-top: 10px;
+    box-shadow: 1px 1px black;
+}
+
+.login-container .login-input {
+    background: #2C2D3E;
+    padding: 10px;
+    width: 231px;
+    margin-bottom: 7px;
+    box-shadow:inset 0px 0px 0px 1px black;
+    border: none;
+    border-radius: 3px; 
+}
+
+.user-screen-container {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.user-screen-container .log-out {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.draggable {
+  width: 100px;
+  height: 100px;
+  margin: 10%;
+  -webkit-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+}
